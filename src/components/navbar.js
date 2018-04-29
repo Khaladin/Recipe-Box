@@ -14,7 +14,7 @@ _onToggleNav = () => {
     return(
       <nav className="navbar navbar-default menu">
         <div className="navbar-header">
-          <a className='navbar-brand' href='/'>Your Brand</a>
+          <a className='navbar-brand brand-name' href='/'>Recipe Box</a>
           <button
             aria-expanded='false'
             className='navbar-toggle collapsed justify-content-end menu__button'
@@ -22,7 +22,7 @@ _onToggleNav = () => {
             type='button'
           >
           <span className='sr-only'>Toggle navigation</span>
-            <span className='icon-bar menu__but'>Menu</span>
+            <span className='icon-bar'>Menu</span>
 
           </button>
         </div>
@@ -30,8 +30,14 @@ _onToggleNav = () => {
           className={(navCollapsed ? 'collapse' : '') + ' navbar-collapse'}
         >
           <ul className='nav navbar-nav navbar-right'>
-            <li>
+            <li className="menu__button__item-1">
               <a>About</a>
+            </li>
+            <li className="menu__button__item-2">
+              <a>Login</a>
+            </li>
+            <li className="menu__button__item-3">
+              <a>Sign-up</a>
             </li>
           </ul>
 

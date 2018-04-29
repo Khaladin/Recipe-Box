@@ -1,9 +1,45 @@
-menu {
+.menu {
   position: relative;
+  padding: 1rem;
 
   &__button {
     position: fixed;
     top: 1rem;
-    right:1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border: none;
+
+    &__item-1 {
+      position: absolute;
+      right: 1rem;
+      top: 6rem;
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+
+    &__item-2 {
+      position: absolute;
+      right: 1rem;
+      top: 10rem;
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+
+    &__item-3 {
+      position: absolute;
+      right: 1rem;
+      top: 14rem;
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
   }
+}
+
+.brand-name {
+  font-size: 2.5rem;
+}
+
+.nav {
+  padding-left: 1rem;
 }
