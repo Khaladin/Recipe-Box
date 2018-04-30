@@ -6,10 +6,14 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './sass/main.css';
 
 import NavBar from './components/navbar';
+import LandingPage from './components/landing-page';
 
 ReactDOM.render(
   <Router>
-    <NavBar />
+    <div>
+      <NavBar />
+      <LandingPage />
+    </div>
   </Router>
 
 
