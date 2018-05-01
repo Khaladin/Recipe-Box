@@ -1,43 +1,50 @@
 .menu {
   position: relative;
   padding: 1rem;
+  z-index: 10;
 
   &__button {
     position: fixed;
     top: 1rem;
     right: 1rem;
     font-size: 2.5rem;
-    padding: 1rem;
+    padding: .5rem 1rem;
     border: none;
+    background-color: #eee;
+    z-index: 10;
 
     &__item-1 {
-      position: absolute;
+      position: fixed;
       right: 1rem;
       top: 6rem;
       font-size: 2.5rem;
       padding: 1rem;
+      z-index: 10;
     }
 
     &__item-2 {
-      position: absolute;
+      position: fixed;
       right: 1rem;
       top: 10rem;
       font-size: 2.5rem;
       padding: 1rem;
+      z-index: 10;
     }
 
     &__item-3 {
-      position: absolute;
+      position: fixed;
       right: 1rem;
       top: 14rem;
       font-size: 2.5rem;
       padding: 1rem;
+      z-index: 10;
     }
   }
 }
 
 .brand-name {
   font-size: 2.5rem;
+  z-index: 10;
 }
 
 .nav {
