@@ -13,10 +13,11 @@ test('renders with navbar collapsed', () => {
 
 test('renders with navbar open when state changes', () => {
   const wrapper = shallow(<Navbar />);
-  expect(wrapper.find('div.collapse' )).to.have.length(1);
-  expect(wrapper.find('div.navbar-collapse').not('div.collapse')).to.have.length(1);
-  wrapper.setState({
-      navCollapsed: false
-  });
+  const nodeLength = wrapper.find('div.collapse.navbar-collapse').length;
+  expect(nodeLength).toBe(1);
 
+  wrapper.find('button').simulate('click');
+
+  const noNode = wrapper.find('div.collapse.navbar-collapse').length;
+  expect(noNode).toBe(0);
 });
